@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jefferson Sornio</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="image/jicon2.png"/>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+	<style type="text/css">
+
+
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+
+	/*	*,*:after,*:before{
+			-webkit-box-sizing:  border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+
+		}*/
+		body{
+			/*background-color: #000;*/
+			background-color: rgba(0,0,0,.9);
+			height: 100vh;
+			/*overflow: hidden;*/
+
+
+		}
+		
+		svg text{
+			font-family: century Gothic;
+			stroke: #fff;
+			font-size: 95px;
+			font-weight: 700;
+			stroke-width: .3;
+			animation:  textAnimate 5s;
+
+
+		}
+
+		@keyframes textAnimate{
+			0%{
+				stroke-dasharray: 0 50%;
+			}
+			100%{
+				stroke-dasharray: 50% 0;
+
+			}
+		}
+		.preload{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0,0,0,.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.6s ease-out;
+			overflow: hidden;
+			z-index: 10000;
+			/*opacity: 1;*/
+		}
+		.preload-finish{
+			opacity: 0;
+			pointer-events: none;
+		}
+		
+		
+
+		/*nav {
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+
+
+		}
+
+		.nav-links{
+			flex: 1;
+			text-align: right;
+		}
+		.nav-links ul li{
+
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+			padding-left: 40px;
+
+		}
+		.nav-links ul li a{
+			color: #fff;
+			text-decoration: none;
+			font-family: Specify PERSONAL Expanded;
+
+		
+		}*/
+		/*li{
+			bottom:  100px;
+		}*/
+		/*.nav-links  ul li::after {
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #b3ecff;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.nav-links  ul li:hover::after{
+			width: 100%;
+		}*/
+		.container{
+
+			width: 100%;
+			height: 100%;
+			/*CSS Smooth Scroll*/
+			/*overflow-y: scroll ;
+			scroll-behavior: smooth;
+			scroll-snap-type: y mandatory;*/
+		}
+		.navbar{
+			position: fixed;
+			top: 0;
+			z-index: 1;
+			display: flex;
+			width: 100%;
+			height: 60px;
+			padding: 1% 3%;
+			z-index: 333;
+
+		}
+		.navbar ul{
+			display: flex;
+			list-style: none;
+			width: 100%;
+			justify-content: right;
+
+
+		}
+		.navbar ul li{
+			margin: 0 1rem;
+			padding: 1rem;
+
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			color: #fff;
+			font-family: Specify PERSONAL Expanded;
+
+		}
+		.navbar ul li::after {
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #fff;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.navbar ul li:hover::after{
+			width: 100%;
+		}
+
+		
+		section{
+			/*padding: 80px 100px;*/
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100vh;
+			align-items: center;
+			/*scroll-snap-align: center;*/
+		}
+		.sec-01 h1{
+			padding: 20px 30px 20px;
+			font-size: 55px;
+			color: #fff;
+			margin-top: 50px;
+			font-family: Specify PERSONAL Expanded;
+			position: relative;
+			line-height: 1.3;
+
+		}
+		.sec-01 p{
+			padding: 0 30px 20px;
+			width: 100%;
+			font-size: 20px;
+			color: #fff;
+			position: relative;
+			font-family: Specify PERSONAL Expanded;
+
+		}
+
+		/*section#home {
+		  background: ;
+		}*/
+		section#about {
+		 /* background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;*/
+		}
+		
+		section#contact {
+		  /*background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;*/
+		}
+		section#aboutpangalawa {
+		 /* background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;*/
+		}
+		
+
+		/*.h1one{
+				margin-left: 50px;
+				top: 60px;
+		}
+		.h1two{
+			margin-left: 50px;
+			top: 60px;
+		}*/
+		 .p_one{
+			/*margin-left: 50px;
+			top: 70px;*/
+		
+		}
+
+
+		.container1{
+			width: 100%;
+		}
+		.sec-02{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 80px 100px;
+
+		}
+		.sec-02 .container1 .section-title {
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-size: 40px;
+			color: #fff;
+			font-family: Specify PERSONAL Expanded;
+		}
+		.sec-01{
+			width: 100%;
+		}
+		
+		.content{
+			margin-top: 40px;
+			left: 120px;
+			position: relative;
+			width: 1150px;
+			display: flex;
+			/*justify-content: center;
+			align-items: center;*/
+		}
+		.content .image{
+			position: relative;
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+
+		}
+		.content .image img{
+			z-index: 111;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+
+
+		}
+		.content .text-box{
+			z-index: 222;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(20px);
+			padding: 40px;
+			max-width: 620px;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-radius: 10px;
+			transform: translate(-80px,60px);
+		}
+		.content .text-box h3{
+			font-size: 2em;
+			margin-bottom: 10px;
+			font-family: Univia Pro;
+			color: #fff;
+		}
+		.content .text-box p{
+			font-family: Univia Pro;
+			color: #fff;
+		}
+
+		.sec-03{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 80px 100px;
+
+		}
+
+		.sec-03 .container1 .section-title {
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-size: 40px;
+			color: #fff;
+			font-family: Specify PERSONAL Expanded;
+		}
+		.content .info h4{
+			font-size: 2em;
+			margin-bottom: 10px;
+			font-family: Univia Pro;
+			color: #fff;
+		}
+		.content .info p{
+			font-family: Univia Pro;
+			color: #fff;	
+		}
+		.zxc a{
+		text-decoration: none;
+		color: #fff;
+		
+		border-radius: 5px;
+		/*background-color: #80d4ff;*/
+		padding: 5px;
+		/*position: relative;
+		top: 10px;*/
+		background: transparent;
+		cursor: pointer;
+		border: 1px solid #fff;
+		
+
+	}
+	.zxc a:hover{
+		background:#b3ecff;
+		color: black;
+		padding:  5px;
+		transition: 1s;
+	}
+
+	/*html,.wrapper{
+		display: grid;
+		height: ;
+		width: 100%;
+		place-items: center;
+	}*/
+
+	.wrapper{
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		place-items: center;
+
+	}
+	.wrapper .button{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		float: left;
+		margin: 0 5px;
+		overflow: hidden;
+		background: #fff;
+		border-radius: 50px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease-out;
+	}
+
+	.wrapper .button:hover{
+		width: 200px;
+	}
+
+	.wrapper .button .icon{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		border-radius: 50px;
+		box-sizing: border-box;
+		line-height: 60px;
+		text-align: center;
+		transition: all 0.3s ease-out;
+	}
+	.wrapper .button:nth-child(1):hover .icon{
+		background: #1877F2;
+	}
+	.wrapper .button:nth-child(2):hover .icon{
+		background: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3):hover .icon{
+		background: #E4405F;
+	}
+	.wrapper .button:nth-child(4):hover .icon{
+		background: #ff0000;
+	}
+
+	.wrapper .button .icon i{
+		font-size: 25px;
+		line-height: 60px;
+		transition: all 0.3s ease-out;
+
+	}
+
+	.wrapper .button:hover .icon {
+		color: #fff;
+		transition: all 0.3s ease-out;
+
+	}
+
+	.wrapper .button span{
+		font-size: 20px;
+		
+		line-height: 60px;
+		margin-left: 10px;
+		font-family: Century Gothic;
+		transition: all 0.3s ease-out;
+
+	}
+
+	.wrapper .button:nth-child(1):hover span{
+		color: #1877F2;
+	}
+	.wrapper .button:nth-child(2):hover span{
+		color: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3):hover span{
+		color: #E4405F;
+	}
+	.wrapper .button:nth-child(4):hover span{
+		color: #ff0000;
+	}
+	.sec-03 .button a{
+		text-decoration: none;
+		color: var(--text-gray);
+	}
+
+
+	.sec-03 .wrapper{
+		top: 100%;
+		width: 50%;
+		left: 950px;
+		/*text-align: center;*/
+		transform: translate(-50%,-50%);
+		position: absolute;
+	}
+	
+
+
+		
+
+		
+
+
+	</style>
+</head>
+<body>
+
+<div class="preload" id="loader">
+		<svg class="gear1" viewBox="0 0 1350 600">
+			<text x="50%" y="50%" fill="transparent" text-anchor="middle">
+			JEP
+			</text>
+		</svg>
+</div>
+
+<div class="container">
+	<nav class="navbar">
+		<!-- <div class="nav-links"> -->
+			<ul>
+				<li><a href="cybersec.html" 			class="cool">Home</a></li>
+				<li><a href="#about"			class="cool">About</a></li>
+				<li ><a href="#contact"			class="">Contact</a></li>
+
+			</ul>
+		<!-- </div>	 -->
+	</nav>
+
+	<section class="sec-01" id="home">
+		<div class="container1">
+			<div class="zxc">
+			<h1 class="h1one">Hello.<br>I am Jefferson</h1>
+			<!-- <a href="#about/" >more</a> -->
+			</div>
+			<!-- <h1 class="h1two">I am Jefferson</h1> -->
+			<p class="p_one">A colllege student taking a Bachelor of Science in Information <br>
+			Technology and dreams of becoming a web developer</p>
+		</div>
+	</section> 
+
+	
+
+
+
+	<section class="sec-02" id="about">
+		<div class="container1">
+			<h1 class="section-title">About me</h1>
+			<div class="content">
+				<div class="image">
+					<img src="image/abtjep.jpg">
+				</div>
+				<div class="text-box">
+					<h3>Jefferson Sornio</h3>
+					<p>I am Jefferson Sornio, a BSIT student studying at Urdaneta City University. when I was young I loved to explore when it came to technology and I also loved to play online games and offline games. when I was in high school here I was more interested in designing and being creative and since then my dream has been to become a good web or mobile developer. when I was in college I never got tired of making animations, designing websites and making mobile applications, one day I will be a successful mobile/web developer too.<br><br> “You don’t get what you wish for. You get what you work for.”</p>
+				</div>
+			</div>
+		</div>
+	</section> 
+
+	<section class="sec-03" id="contact">
+		<div class="container1">
+			<h3 class="section-title"> Contact</h3>
+			<div class="content">
+				<div class="info">
+					<h4 class="info-title">Let's chat.<br>
+											Tell me about your<br>
+											project.</h4>
+					<p>Let's create something together.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="button">
+				<div class="icon"> <a href="https://www.facebook.com/jefferson.ventura.94" target="_black"><i class="fab fa-facebook-f"></i></a>
+				</div>
+				<span>Facebook</span>
+			</div>
+			<div class="button" >
+				<div class="icon"><a href="https://twitter.com/jjjeppp?t=YOIccQu-hw5eG1DQk3buxw&s=09" target="_black"><i class="fab fa-twitter"></i></a>
+				</div>
+				<span>Twitter</span>
+			</div>
+			<div class="button">
+				<div class="icon"><a href="https://www.instagram.com/jffrsnvntra/?hl=en" target="_black"><i class="fab fa-instagram"></i></a>
+				</div>
+				<span>Instagram</span>
+			</div>
+			<div class="button">
+				<div class="icon"><a href="https://www.youtube.com/channel/UCFsfehLlQ3SUOLc6lXUukRw" target="_black"><i class="fab fa-youtube"></i></a>
+				</div>
+				<span>Youtube</span>
+			</div>
+		</div>
+
+	</section>
+
+</div>
+
+
+	
+
+
+<script>
+	ScrollReveal({
+	 //reset: true,
+	 distance:'60px',
+	 duration: 2500,
+	 delay: 500
+	});
+
+	ScrollReveal().reveal('.h1one, .p_one',{delay: 3000, origin: 'left'});
+	ScrollReveal().reveal('.navbar',{delay: 3000, origin: 'right'});
+
+	ScrollReveal().reveal('.section-title',{delay: 200, origin: 'left'});
+	ScrollReveal().reveal('.image ',{delay: 200, origin: 'bottom'});
+	ScrollReveal().reveal('.text-box ',{delay: 200, origin: 'right'});
+
+	ScrollReveal().reveal('.info ',{delay: 200, origin: 'right'});
+	ScrollReveal().reveal('.wrapper ',{delay: 200, origin: 'bottom'});
+
+</script>
+
+<script type="text/javascript" src="js/app.js"></script>	
+
+<script>
+	
+	var loader = document.getElementById("preload");
+
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	},5000);
+
+</script>
+
+</body>
+</html>
